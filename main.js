@@ -6,9 +6,9 @@ todoButton.addEventListener('click', addTodo);
 function addTodo(event)
 {
     event.preventDefault();
-    let list = document.createElement("li");
     let inputValue = todoInput.value;
     let text = document.createTextNode(inputValue);
+    let list = document.createElement("li");
     list.appendChild(text);
     if (inputValue === '') {
         alert("Error!");
